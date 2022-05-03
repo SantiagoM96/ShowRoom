@@ -1,0 +1,62 @@
+[
+        {
+            "nombre": "SHOES",
+            "url": "https://www.google.com/",
+            "modelos": [
+                {
+                    "id": 1,
+                    "nombre": "Nike Structure",
+                    "precio": 2000,
+                    "cantidad": 1,
+                    "imagen": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwd68bfc16/products/NI_CZ6721-001/NI_CZ6721-001-1.JPG"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Nike Pegasus",
+                    "precio": 4000,
+                    "cantidad": 1,
+                    "imagen": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwaa65fb67/products/NI_CW7358-500/NI_CW7358-500-1.jpg"
+                }
+            ]
+        },
+        {
+            "nombre": "T-SHIRT",
+            "url": "https://www.google.com/",
+            "modelos": [
+                {
+                    "id": 3,
+                    "nombre": "Relaxed",
+                    "precio": 1500,
+                    "cantidad": 1,
+                    "imagen": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwa4d8847a/products/LO_NFW201408/LO_NFW201408-1.JPG"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Standard",
+                    "precio": 1000,
+                    "cantidad": 1,
+                    "imagen": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw345d480f/products/NI_DC8979-492/NI_DC8979-492-1.JPG"
+                }
+            ]
+        },
+        {
+            "nombre": "TROUSERS",
+            "url": "https://www.google.com/",
+            "modelos": [
+                {
+                    "id": 5,
+                    "nombre": "Capri 43",
+                    "precio": 3000,
+                    "cantidad": 1,
+                    "imagen": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwbe140c28/products/LO_NIFW21068/LO_NIFW21068-1.JPG"
+                },
+                {
+                    "id": 6,
+                    "nombre": "Urban",
+                    "precio": 4000,
+                    "cantidad": 1,
+                    "imagen": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw887b7752/products/PU_586749-03/PU_586749-03-1.JPG"
+                }
+            ]
+        }
+    ]

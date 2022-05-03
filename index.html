@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONO DE LA PÁGINA -->
+    <link rel="shortcut icon" href="img/icon/icons8-ropa-100.png" type="image/x-icon">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/cc35ccca45.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Toastify JS -->
+    <!-- https://github.com/apvarun/toastify-js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.css"
+        integrity="sha512-UiKdzM5DL+I+2YFxK+7TDedVyVm7HMp/bN85NeWMJNYortoll+Nd6PU9ZDrZiaOsdarOyk9egQm6LOJZi36L2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.js"
+        integrity="sha512-79j1YQOJuI8mLseq9icSQKT6bLlLtWknKwj1OpJZMdPt2pFBry3vQTt+NZuJw7NSd1pHhZlu0s12Ngqfa371EA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SCRIPTS -->
+    <script src="js/clases/carrito.clase.js" defer></script>
+    <script src="js/animaciones.js" defer></script>
+    <script src="js/app.js" defer></script>
+
+    <title>ShowRoom</title>
+</head>
+
+<body onload="init()">
+    <div class="loader">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <!-- HEADER -->
+    <header>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav id="navBar">
+            <a href="#home" class="siteLogo">showroom</a>
+            <ul class="listItems">
+                <li><a class="menuItem active" data-url="home" href="#">home</a></li>
+                <li><a class="menuItem" data-url="about" href="#">about us</a></li>
+                <li><a class="menuItem" data-url="products" href="#">products</a></li>
+                <li><a class="menuItem" data-url="contact" href="#">contact</a></li>
+            </ul>
+            <div class="trolley">
+                <!-- BOTON DEL CARRITO -->
+                <div id="botonCarrito">
+                    <img src="img/agregar-carrito.png" alt="" class="botonCarrito" title="My shopping cart">
+                    <p class="contador" id="contadorCarrito">0</p>
+                    <!-- SIMULA UN MODAL PARA MOSTRAR EL CARRITO -->
+                    <div id="modalCarrito" class="modalCarrito">
+                        <!-- CONTENEDOR DEL CARRITO -->
+                        <div id="productosDelCarrito">
+                        </div>
+                        <!-- CONTENEDOR DEL PRECIO DEL CARRITO Y, BOTONES PARA COMPRAR PRODUCTOS Y VACIAR CARRITO -->
+                        <div class="contenedorFooterCarrito">
+                            <p class="totalBuy">AMOUNT: $<span id="valorTotal"></span></p>
+                            <!-- BOTONES DE COMPRAR Y VACIAR CARRITO -->
+                            <div>
+                                <img src="img/verificar.png" alt="" title="Buy products" id="comprarProductos">
+                                <img src="img/quitar-del-carrito.png" alt="" id="vaciarCarrito" title="Empty cart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- PRESENTACION -->
+    <section id="home" class="seccion">
+        <article class="homeText">
+            <p>WE REPRESENT</p>
+            <h1>BUENOS AIRES STYLE</h1>
+        </article>
+    </section>
+    <section id="about" class="seccion">
+        <figure>
+            <img src="img/pexels-buro-millennial-1438072.jpg" alt="" class="imgAbout">
+            <figcaption>
+                <h3>About Us</h3>
+                <p> We usually organize work meetings in which we develop more and better ideas day by day just for
+                    you.
+                    "ShowRoom" was a mini project of a small group of friends who were passionate about urban
+                    fashion.
+                    Today, we have more than 20 people who accompany us.
+                    Incredible, isn't it?
+                </p>
+                <p>Of course, we dream of expanding beyond our current circle and continuing to offer affordable and
+                    quality garments to the entire "Showroom" community.</p>
+            </figcaption>
+
+        </figure>
+    </section>
+    <section id="products" class="seccion">
+        <!-- PRODUCTOS DE LA TIENDA -->
+        <div class="sale">
+            <h2>OUR PRODUCTS FOR</h2>
+            <img src="img/sale.png" alt="" class="hotSale">
+        </div>
+        <article class="contenedorProductos" id="contenedorProductos">
+        </article>
+    </section>
+    <footer id="contact" class="footer seccion">
+        <div class="containermain">
+            <div class="container">
+                <div class="row">
+                    <div class="footerCol">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about us</a></li>
+                            <li><a href="#products">products</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerCol">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">shipping</a></li>
+                            <li><a href="">returns</a></li>
+                            <li><a href="">order status</a></li>
+                            <li><a href="">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerCol">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#products">t-shirt</a></li>
+                            <li><a href="#products">shoes</a></li>
+                            <li><a href="#products">trousers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerCol">
+                        <h4>Follow Us</h4>
+                        <div class="socialLinks">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- BOTÓN IR ARRIBA -->
+    <div id="buttonUp">
+        <i class="fas fa-angle-up fa-lg"></i>
+    </div>
+
+
+</body>
+
+</html>
