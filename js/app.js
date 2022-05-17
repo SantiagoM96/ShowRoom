@@ -1,7 +1,6 @@
 const init = () => {
 	fetchData();
 	actualizarCarrito();
-	boton()
 };
 
 const carrito = new Carrito();

@@ -15,10 +15,6 @@ const moverCarrito = e => {
         eliminarProductos();
         comprarProductos();
     }
-    ((modalCarrito.classList.contains("visible")) && (ancho <= 1000)) 
-    && (buttonUp.style.transform = 'scale(0)')
-
-
     e.stopPropagation();
 }
 
@@ -121,18 +117,4 @@ const observerDos = new IntersectionObserver(scrollAppear, {
 })
 
 observerDos.observe(contenedorProductos)
-
-const boton = () => {
-    ancho = document.documentElement.clientWidth
-    botonArriba(ancho)
-}
-
-
-let ancho;
-const botonArriba = (ancho) => {
-    if ((ancho <= 1000) && (modalCarrito.classList.contains("visible"))) {
-        console.log("ok")
-    }
-}
-
 
