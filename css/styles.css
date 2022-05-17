@@ -166,7 +166,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8vh 0;
+    padding: 8vh 0;
 }
 
 
@@ -177,7 +177,8 @@ header {
 }
 
 .imgAbout {
-    width: 500px;
+    width: 100%;
+    max-width: 450px;
     height: auto;
     margin: 2vh;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -231,7 +232,8 @@ header {
 }
 
 .hotSale {
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     height: auto;
 }
 
@@ -306,7 +308,7 @@ header {
 }
 
 .card img {
-    max-width: 160px;
+    width: 160px;
     height: auto;
 }
 
@@ -321,7 +323,7 @@ header {
     background-color: white;
     z-index: 100;
     top: 46px;
-    right: 150px;
+    right: 160px;
     border: 1px solid var(--fifth-color);
     transform: translateX(600px);
     opacity: 0;
@@ -571,18 +573,7 @@ header {
     transform: scale(1.1);
 }
 
-@media(max-width: 767px) {
-    .footerCol {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
 
-@media(max-width: 574px) {
-    .footerCol {
-        width: 100%;
-    }
-}
 
 /* ALERTAS DE TOASTIFY */
 
@@ -618,4 +609,102 @@ header {
     font-family: futuraBook;
     font-size: 20px;
     color: var(--second-color);
+}
+
+@media (max-width:768px) {
+
+    #home {
+        background-position: center;
+    }
+
+    .siteLogo {
+        font-size: 20px;
+    }
+
+    .cardEnMiCarrito .borrarProducto {
+        width: 30px;
+    }
+
+    .listItems {
+        display: none;
+    }
+
+    .homeText h1 {
+        font-size: 30px;
+    }
+
+    #products {
+        padding: 8vh;
+        margin: 0;
+    }
+
+
+    .sale h2 {
+        font-size: 22px;
+    }
+
+    .hotSale {
+        width: 65px;
+    }
+
+    .contenedorProductos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 22px 28px;
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    .btnAdd {
+        font-size: 30px;
+    }
+
+    #about {
+        margin: 0;
+        height: auto;
+        max-height: 100vh;
+        padding: 0;
+    }
+
+
+    #about figure {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .imgAbout {
+        margin: 0;
+    }
+
+    #about figure figcaption {
+        width: 100%;
+    }
+
+    #about figure figcaption h3 {
+        font-size: 25px;
+    }
+
+    #about figure figcaption p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .footerCol {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 574px) {
+    .footerCol {
+        width: 100%;
+    }
 }
