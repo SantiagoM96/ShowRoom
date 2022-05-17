@@ -16,11 +16,7 @@ const moverCarrito = e => {
         comprarProductos();
     }
     e.stopPropagation();
-    if (modalCarrito.classList.contains("visible")) {
-        buttonUp.style = "display : none"
-    } else {
-        buttonUp.style = "display : flex"
-    }
+
 }
 
 const buttonUp = document.getElementById('buttonUp');
